@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django Detay</title>
+</head>
+<body>
+    
+    <h1>Detay Sayfam</h1>
+    <a href="{% url "index_sayfasi" %}">İndex sayfasına git</a>
+    {% comment %} {{ alet_detay }} {% endcomment %}
+
+    <ul>
+        {% for alet in alet_detay %}
+        <li>
+            <a href="{% url "index_sayfasi" %}">
+                {{ alet }}
+            </a>
+
+        </li>
+        
+        {% endfor %}
+    </ul>
+
+</body>
+</html>
