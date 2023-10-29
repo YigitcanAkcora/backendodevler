@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block title %} İndex {% endblock title %}
+
+{% block content %}
+
+
+<h1>urunler index sayfam</h1>
+
+<div class="container d-flex gap-2">
+
+  {% for urun in urunler %}
+
+    {% include "partials/_card.html" %}
+
+  {% endfor %}
+
+</div>
+
+
+{% endblock content %}
+
+
+{% comment %} {% block ikinci %}
+  <h1> İkinci blok yapım </h1>
+{% endblock ikinci %} {% endcomment %}
+
+
+
+
+
+
+
+
+

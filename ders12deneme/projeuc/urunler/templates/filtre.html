@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+
+{% block title %}
+    {% for urun in urunler2 %}
+        
+            {{ urun.urun_adi }}
+  
+    {% endfor %}
+{% endblock title %}
+
+{% block content %}
+
+{% for urun in urunler2 %}
+
+ {% include "partials/_card.html" %}
+
+{% endfor %}
+
+{% endblock content %}
+
+
+
